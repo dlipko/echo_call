@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .file-chooser-hack {
+            position: relative;
+            display: inline-block;
+            height: auto;
+            width: auto;
+        }
+        .file-chooser-hack > input.file-choose-button {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .file-chooser-hack:hover > button.file-choose-button.dark-gray-bg {
+            background-color: rgb(85,91,93);
+        }
+        .file-chooser-hack:hover > button.file-choose-button.dark-gray-bg {
+            background-color: rgb(85,91,93);
+        }
+    </style>
+</head>
+<body>
+    <!-- <audio id="audio" controls autoplay></audio> -->
+
+    <video id="remoteVideo"></video>
+    <video id="localVideo" muted="muted"></video>
+
+
+    <script src="sip-0.13.2.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
